@@ -82,25 +82,6 @@ Each Hibernate product reports its version when starting up.
 * If you sure you are using the right version of Annotations and Search and you still get this exception it might be that you have a custom class loading configuration which prevents Annotations to locate the Search specific event listeners.
 If this is the case try the manual configuration.
 
-=== How do I get started with the search archetype?
-
-Use the following command, specifying the latest Hibernate Search version for archetypeVersion (or the version of your choice):
-
-[source]
-----
-mvn archetype:generate -DarchetypeGroupId=org.hibernate -DarchetypeArtifactId=hibernate-search-quickstart -DarchetypeVersion=4.0.0.Final -DarchetypeRepository=http://repository.jboss.org/nexus/content/groups/public-jboss/
-----
-
-You need to specify the group id, artifact id and a version.
-Once the sample project is created you can inspect the sources and run for exmaple mvn test.
-
-To get a full list of available archetypes in the repo run:
-
-[source]
-----
-mvn archetype:generate -DarchetypeRepository=http://repository.jboss.org/nexus/content/groups/public-jboss
-----
-
 == Integration
 
 === +NoSuchMethodError+ in JBoss AS 4.2
